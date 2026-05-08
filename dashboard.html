@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body style="background-color: rgb(67, 116, 116);">
+ 
+<header>
+  <h2>📂 My Documents</h2>
+  <button onclick="logout()">Logout</button>
+</header>
+ <center>
+  <div class="dashboard-container">
+  <h2> upload your dcuments  here.</h2>
+<h3> step 1. choose your documens from <br>your  local storage.</h3><br>
+<h3>step2. click on the upload button to <br>upload your documents securely. </h3></center><br>
+<div class="container">
+  <div class="upload-box">
+    <input type="file" id="fileInput"><br><br><br>
+    <button onclick="uploadFile()">Upload</button><br>
+  </div>
+
+  <div class="docs-box">
+    <h3>Stored Documents</h3>
+    <ul id="docList"></ul>
+  </div>
+</div>
+
+</div>
+<center>
+<footer class="footer">
+ 
+    <p class="copyright">© 2025 Student DigiLocker. All Rights Reserved.</p>
+  </div>
+</footer>
+</center>
+<script src="dashboard.js"></script>
+</body>
+</html>
